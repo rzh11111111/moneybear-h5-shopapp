@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style >
+        .htmleaf-container{
+            width: 500px;
+        }
+        .carousel {
+            /*padding: 20px;*/
+            -webkit-perspective: 500px;
+            perspective: 500px;
+            overflow: hidden;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+        .carousel > * {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+        }
+        .carousel figure {
+            margin-top: 100px;
+            width: 60%;
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            -webkit-transition: -webkit-transform 0.5s;
+            transition: -webkit-transform 0.5s;
+            transition: transform 0.5s;
+            transition: transform 0.5s, -webkit-transform 0.5s;
+        }
+        .carousel figure div {
+            width: 300px;
+            box-sizing: border-box;
+            padding: 0 0px !important;
+            text-align: center;
+            line-height: 200px;
+            font-size: 30px;
+        }
+        .div1{
+            background: orange;
+        }
+        .div2{
+            background: pink;
+        }
+        .div3{
+            background: blueviolet;
+        }
+        .carousel figure div:not(:first-of-type) {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+    </style>
+</head>
+<body>
+<div class="htmleaf-container">
+    <div class="carousel" data-gap="20" data-bfc>
+        <figure>
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+        </figure>
+
+    </div>
+    <button onclick="check(-1)">上一页</button>
+    <button onclick="check(1)"> 下一页</button>
+</div>
+
+</body>
+<script>
+    var carousels = document.querySelectorAll('.carousel');
+    var currImage = 0,  theta = (2 * Math.PI) / (carousels[0].querySelector("figure").children.length);
+    var timer = '';
+    carousel(carousels[0])
+    function check(num) {
+        clearInterval(timer);
+        currImage = currImage + num;
+        carousels[0].querySelector("figure").style.transform = 'rotateY(' + currImage * -theta + 'rad)';
+        timer=setInterval(function(){
+            currImage++;
+            carousels[0].querySelector("figure").style.transform = 'rotateY(' + currImage * -theta + 'rad)';
+        },5000)
+    }
+
+    function carousel(root) {
+        var figure = root.querySelector("figure"),
+            images = figure.children,
+            n = images.length,
+            gap = root.dataset.gap || 0,
+            bfc = "bfc" in root.dataset
+        var s = parseFloat(getComputedStyle(images[0]).width)
+        var apothem = s / (2 * Math.tan(Math.PI / n));
+        figure.style.transformOrigin = "50% 50% " + -apothem + "px";
+        for (var i = 0; i < n; i++) {
+            images[i].style.padding = gap + "px";
+        }
+        for (i = 1; i < n; i++) {
+            images[i].style.transformOrigin = "50% 50% " + -apothem + "px";
+            images[i].style.transform = "rotateY(" + i * theta + "rad)";
+        }
+        if (bfc)
+            for (i = 0; i < n; i++) {
+                images[i].style.backfaceVisibility = "hidden";
+            }
+        timer=setInterval(function(){
+            currImage++;
+            figure.style.transform = 'rotateY(' + currImage * -theta + 'rad)';
+        },5000)
+    }
+
+</script>
+</html>

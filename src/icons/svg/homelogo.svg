@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="105px" viewBox="0 0 375 105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57 (83077) - https://sketch.com -->
+    <title>分组 13</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="46.9550541%" x2="100%" y2="50.8618876%" id="linearGradient-1">
+            <stop stop-color="#09B9FE" offset="0%"></stop>
+            <stop stop-color="#096DE3" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="47.9755166%" x2="100%" y2="50.5730404%" id="linearGradient-2">
+            <stop stop-color="#09B9FE" offset="0%"></stop>
+            <stop stop-color="#096DE3" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="48.6370468%" x2="100%" y2="50.3857909%" id="linearGradient-3">
+            <stop stop-color="#09B9FE" offset="0%"></stop>
+            <stop stop-color="#096DE3" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="登录" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.6">
+        <g id="登录页" transform="translate(0.000000, -562.000000)">
+            <g id="编组-3" transform="translate(0.000000, 547.000000)">
+                <g id="分组-13" transform="translate(-37.000000, 15.000000)" opacity="0.101888021">
+                    <path d="M25,15.8185114 C35.2220777,4.91028747 66.1218691,-8.64660602 119.309569,7.31267761 C294.764512,72.6726318 337.216122,52.438151 422.897201,43.0758025 C480.017921,36.8342368 485.708184,59.5406176 439.967991,111.194945 L25,107.952677 C18.1852815,53.8020494 18.1852815,23.0906607 25,15.8185114 Z" id="路径-16" fill="url(#linearGradient-1)" style="mix-blend-mode: overlay;"></path>
+                    <path d="M29,51.4966064 C51.1474345,54.3817196 87.702212,59.4023178 138.664333,66.5584008 C209.668266,75.0869818 273.411636,27.2290307 347,22.7130261 C394,19.8287085 423.793861,34.9164709 439.967991,45.7150467 C472.50259,67.4366078 472.50259,89.1193948 439.967991,110.763408 L25,107.368149 L29,51.4966064 Z" id="路径-16-copy" fill="url(#linearGradient-2)" style="mix-blend-mode: overlay;"></path>
+                    <path d="M6.04583288,59.5188155 C18.1374986,50.8860157 54.6887713,40.1570511 117.604346,52.7872741 C325.149484,104.51333 375.365369,88.4997039 476.717267,81.0903143 C544.285198,76.1507212 551.016194,94.1206164 496.910254,135 L6.04583288,132.43406 C-2.01527763,89.579097 -2.01527763,65.2740154 6.04583288,59.5188155 Z" id="路径-16备份" fill="url(#linearGradient-3)" style="mix-blend-mode: overlay;" transform="translate(266.500000, 91.000000) scale(-1, 1) translate(-266.500000, -91.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

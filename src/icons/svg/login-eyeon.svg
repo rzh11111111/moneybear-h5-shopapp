@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57 (83077) - https://sketch.com -->
+    <title>密码可见</title>
+    <desc>Created with Sketch.</desc>
+    <g id="0830改版页面" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="登录页·输入中" transform="translate(-319.000000, -284.000000)" stroke="#CCCCCC">
+            <g id="编组" transform="translate(38.000000, 217.000000)">
+                <g id="密码可见-2-copy" transform="translate(281.000000, 67.000000)">
+                    <g id="密码可见">
+                        <g id="分组" transform="translate(0.000000, 3.000000)">
+                            <path d="M9,0.75 C6.59538128,0.75 4.12801774,2.2070243 1.60037937,5.19225974 C1.20567605,5.65841913 1.20567416,6.3415666 1.60036983,6.80772899 C4.12801149,9.792972 6.59537825,11.25 9,11.25 C11.4046187,11.25 13.8719823,9.7929757 16.3996206,6.80774026 C16.794324,6.34158087 16.7943258,5.6584334 16.3996302,5.19227101 C13.8719885,2.207028 11.4046218,0.75 9,0.75 Z" id="矩形" stroke-width="1.5"></path>
+                            <circle id="椭圆形" stroke-width="1.5" cx="9" cy="6" r="2.25"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
